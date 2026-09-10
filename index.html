@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071326">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="GurSetu — a premium mobile-first Sikh spiritual companion landing page for Nitnem, Simran, Hukamnama, AI Sahayak, Sangat and more.">
+  <title>GurSetu — Your Daily Sikh Companion</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','28464481456575690');
+    fbq('track','PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=28464481456575690&ev=PageView&noscript=1" alt="">
+  </noscript>
+
+  <svg class="svg-library" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5.5c3.4-1.1 6.4-.5 9 1.5 2.6-2 5.6-2.6 9-1.5V19c-3.4-1.1-6.4-.5-9 1.5-2.6-2-5.6-2.6-9-1.5V5.5Z"/><path d="M12 7v13"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 1-8 8H5l-2 2 1.2-4.2A8 8 0 1 1 20 11Z"/><path d="M8 10h8M8 13h5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 1.7 5.3L19 9l-5.3 1.7L12 16l-1.7-5.3L5 9l5.3-1.7L12 2Z"/><path d="m18.5 15 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2Z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 10h18"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20c.5-4 2.5-6 6-6s5.5 2 6 6M15 14c3 0 5 1.8 5.5 5"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M13.5 2.5c.7 4-1.5 5.1-2.8 7.2-1.2 1.9-.5 3.5 1.1 4.6-.2-2 .9-3 2.1-4.2 2.7 2.1 4.1 4.5 4.1 7A6 6 0 0 1 6 17c0-4.5 3.3-7 7.5-14.5Z"/></symbol>
+    <symbol id="i-journal" viewBox="0 0 24 24"><path d="M5 3h13a2 2 0 0 1 2 2v16H7a3 3 0 0 1-3-3V5a2 2 0 0 1 1-2Z"/><path d="M8 7h8M8 11h8M8 15h5"/></symbol>
+    <symbol id="i-quiz" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.7 2.7 0 1 1 3.8 2.5c-.9.4-1.3 1-1.3 2M12 17h.01"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="7" rx="2"/><rect x="17" y="13" width="4" height="7" rx="2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5.5-8 12-8 12S4 15.5 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </svg>
+
+  <div class="scene" aria-hidden="true">
+    <div class="scene-gradient"></div>
+    <div class="scene-orb orb-a"></div>
+    <div class="scene-orb orb-b"></div>
+    <div class="scene-ray"></div>
+    <div class="scene-grid"></div>
+    <div id="particles" class="particles"></div>
+  </div>
+
+  <!-- 5-second welcome popup -->
+  <div class="welcome-modal" id="welcomeModal" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <div class="modal-card" id="modalCard">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+      <div class="modal-khanda">ੴ</div>
+      <span class="modal-eyebrow" data-t="welcomeEyebrow">A calmer space begins here</span>
+      <h2 id="welcomeTitle" data-t="welcomeTitle">Welcome to GurSetu</h2>
+      <p data-t="welcomeText">Your daily Sikh spiritual companion for Nitnem, Simran, Gurbani guidance and meaningful practice.</p>
+      <div class="modal-footer">
+        <span data-t="autoClose">Closes automatically</span>
+        <strong><span id="popupCountdown">4</span>s</strong>
+      </div>
+      <div class="modal-progress"><span id="popupProgress"></span></div>
+    </div>
+  </div>
+
+  <!-- compact premium redirect bar -->
+  <div class="redirect-strip">
+    <div class="container redirect-inner">
+      <div class="redirect-message">
+        <span class="live-dot"></span>
+        <span data-t="redirectPrefix">Opening GurSetu on Google Play in</span>
+        <strong><span class="redirect-countdown">10</span>s</strong>
+      </div>
+      <div class="redirect-actions">
+        <button class="strip-button" id="pauseRedirect" type="button" data-t="pause">Pause</button>
+        <a class="strip-button strip-primary app-link" href="https://play.google.com/store/apps/details?id=com.gursetu.app" target="_blank" rel="noopener" data-t="openNow">Open now</a>
+      </div>
+    </div>
+    <div class="redirect-progress"><span id="redirectProgress"></span></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-shell">
+      <a class="brand" href="#home" aria-label="GurSetu home">
+        <span class="brand-orb">ੴ</span>
+        <span class="brand-copy"><strong>GurSetu</strong><small data-t="companion">Your Daily Sikh Companion</small></span>
+      </a>
+
+      <div class="header-actions">
+        <div class="language-selector" role="group" aria-label="Choose language">
+          <button type="button" class="language-button active" data-lang="en">EN</button>
+          <button type="button" class="language-button" data-lang="hi">हिं</button>
+          <button type="button" class="language-button" data-lang="pa">ਪੰ</button>
+        </div>
+        <a class="header-download app-link" href="https://play.google.com/store/apps/details?id=com.gursetu.app" target="_blank" rel="noopener">
+          <span data-t="getApp">Get App</span><svg><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="hero-kicker"><span>✦</span><span data-t="heroKicker">Faith · Practice · Peace</span></div>
+          <h1><span data-t="heroLine1">Start your daily</span> <span class="gold-line" data-t="heroLine2">spiritual journey</span></h1>
+
+          <div class="word-rotator" aria-live="polite">
+            <span data-t="oneAppFor">One peaceful app for</span>
+            <span class="changing-word-wrap"><strong id="changingWord">Nitnem</strong></span>
+          </div>
+
+          <p class="hero-text" data-t="heroText">Read. Reflect. Remember. Connect your daily Sikh practice in one beautifully focused experience.</p>
+
+          <div class="hero-buttons">
+            <a class="primary-cta app-link" href="https://play.google.com/store/apps/details?id=com.gursetu.app" target="_blank" rel="noopener">
+              <span class="play-mark">▶</span><span data-t="downloadApp">Download GurSetu</span><svg><use href="#i-arrow"/></svg>
+            </a>
+            <a class="secondary-cta" href="#download"><span data-t="scanDownload">Scan to Download</span></a>
+          </div>
+
+          <div class="trust-row">
+            <span><svg><use href="#i-check"/></svg><span data-t="threeLanguages">3 Languages</span></span>
+            <span><svg><use href="#i-check"/></svg><span data-t="dailyTools">Daily Tools</span></span>
+            <span><svg><use href="#i-check"/></svg><span data-t="mobileFirst">Made for Mobile</span></span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" id="heroVisual">
+          <div class="poster-aura"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="slider-wrap" id="sliderWrap">
+            <div class="slider-topline">
+              <span><span class="status-dot"></span><span data-t="visualTour">GurSetu visual tour</span></span>
+              <strong id="slideCounter">01 / 07</strong>
+            </div>
+            <div class="slider-stage" id="sliderStage">
+              <article class="slide active" data-index="0"><img src="assets/slide-1.webp" alt="GurSetu spiritual journey poster"></article>
+              <article class="slide" data-index="1"><img src="assets/slide-2.webp" alt="GurSetu Sahayak poster"></article>
+              <article class="slide" data-index="2"><img src="assets/slide-3.webp" alt="GurSetu Simran poster"></article>
+              <article class="slide" data-index="3"><img src="assets/slide-4.webp" alt="GurSetu Nitnem poster"></article>
+              <article class="slide" data-index="4"><img src="assets/slide-5.webp" alt="GurSetu live Sangat poster"></article>
+              <article class="slide" data-index="5"><img src="assets/slide-6.webp" alt="GurSetu Nanakshahi Calendar poster"></article>
+              <article class="slide" data-index="6"><img src="assets/slide-7.webp" alt="GurSetu download poster"></article>
+            </div>
+            <div class="slider-controls">
+              <button type="button" class="slider-arrow" id="prevSlide" aria-label="Previous poster">←</button>
+              <div class="slider-dots" id="sliderDots"></div>
+              <button type="button" class="slider-arrow" id="nextSlide" aria-label="Next poster">→</button>
+            </div>
+            <div class="swipe-hint" data-t="swipeHint">Swipe posters ↔</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- continuously moving span -->
+    <section class="feature-marquee" aria-label="GurSetu features">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>AI Sahayak</span><i>✦</i><span>Simran</span><i>✦</i><span>Hukam Journal</span><i>✦</i><span>Quiz</span><i>✦</i><span>Nitnem</span><i>✦</i><span>Hukamnama</span><i>✦</i><span>Live Sangat</span><i>✦</i><span>40 Day Challenge</span><i>✦</i><span>Nanakshahi Calendar</span><i>✦</i>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>AI Sahayak</span><i>✦</i><span>Simran</span><i>✦</i><span>Hukam Journal</span><i>✦</i><span>Quiz</span><i>✦</i><span>Nitnem</span><i>✦</i><span>Hukamnama</span><i>✦</i><span>Live Sangat</span><i>✦</i><span>40 Day Challenge</span><i>✦</i><span>Nanakshahi Calendar</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-t="everythingEyebrow">One companion · many meaningful moments</span>
+          <h2 data-t="everythingTitle">Everything that keeps your practice connected.</h2>
+          <p data-t="everythingText">Simple daily tools, thoughtful guidance and a focused spiritual experience — built around your routine.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-book"/></svg></span><small>01</small><h3>Nitnem Reader</h3><p data-t="nitnemText">A calm, distraction-light space for daily Bani reading.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-spark"/></svg></span><small>02</small><h3>Simran Counter</h3><p data-t="simranText">Track Naam Simran and build a gentle daily rhythm.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-chat"/></svg></span><small>03</small><h3>AI Sahayak</h3><p data-t="aiText">Ask questions and explore Gurbani ideas in simple language.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-journal"/></svg></span><small>04</small><h3>Hukam Journal</h3><p data-t="journalText">Reflect on the day and keep meaningful thoughts together.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-calendar"/></svg></span><small>05</small><h3>Nanakshahi Calendar</h3><p data-t="calendarText">Follow important dates, Gurpurabs and upcoming moments.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-users"/></svg></span><small>06</small><h3>Live Sangat</h3><p data-t="sangatText">Stay connected to community-centered spiritual experiences.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-flame"/></svg></span><small>07</small><h3>40 Day Challenge</h3><p data-t="challengeText">Turn small daily actions into a stronger spiritual habit.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-quiz"/></svg></span><small>08</small><h3>Quiz</h3><p data-t="quizText">Learn through engaging questions, reflection and discovery.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-headphones"/></svg></span><small>09</small><h3>Audio Path</h3><p data-t="audioText">Listen and practice when reading is not convenient.</p></article>
+          <article class="feature-card tilt reveal"><span class="feature-icon"><svg><use href="#i-pin"/></svg></span><small>10</small><h3>Gurdwara Connect</h3><p data-t="gurdwaraText">Keep useful local spiritual information close at hand.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-section">
+      <div class="container journey-card reveal">
+        <div class="journey-copy">
+          <span class="eyebrow" data-t="dailyFlow">A simple daily flow</span>
+          <h2><span data-t="journeyStart">Start with</span> <strong id="journeyWord">Nitnem</strong></h2>
+          <p data-t="journeyText">Move through your day with a calmer rhythm: read, remember, reflect and reconnect.</p>
+        </div>
+        <div class="journey-steps">
+          <div><b>01</b><span data-t="stepRead">Read</span></div><i></i>
+          <div><b>02</b><span data-t="stepRemember">Remember</span></div><i></i>
+          <div><b>03</b><span data-t="stepReflect">Reflect</span></div><i></i>
+          <div><b>04</b><span data-t="stepConnect">Connect</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download-section" id="download">
+      <div class="container download-card reveal">
+        <div class="download-copy">
+          <span class="eyebrow" data-t="scanEyebrow">One scan away</span>
+          <h2 data-t="scanTitle">Take GurSetu with you.</h2>
+          <p data-t="scanText">Scan the QR code with your phone camera or tap the button to open GurSetu directly on Google Play.</p>
+
+          <div class="scan-chips">
+            <span>English</span><span>हिंदी</span><span>ਪੰਜਾਬੀ</span>
+          </div>
+
+          <a class="primary-cta app-link" href="https://play.google.com/store/apps/details?id=com.gursetu.app" target="_blank" rel="noopener">
+            <span class="play-mark">▶</span><span data-t="openPlay">Open on Google Play</span><svg><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+
+        <div class="qr-zone">
+          <div class="qr-halo"></div>
+          <div class="qr-frame"><img src="assets/gursetu-qr.png" alt="QR code to open GurSetu on Google Play"></div>
+          <strong data-t="scanMe">SCAN ME</strong>
+          <span data-t="cameraHint">Open your phone camera</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-strip">
+      <div class="container final-strip-inner reveal">
+        <div><span class="brand-orb small">ੴ</span><div><strong>GurSetu</strong><small data-t="finalText">More than an app. A bridge to daily practice.</small></div></div>
+        <a class="header-download app-link" href="https://play.google.com/store/apps/details?id=com.gursetu.app" target="_blank" rel="noopener"><span data-t="getApp">Get App</span><svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 GurSetu</span>
+      <span>Built by Codesphere Technologies who believe technology should serve faith, not the other way around.
+         <br />
+        Every line of code is written with Chardi Kala. Every pixel is designed with love. Every feature is tested with sangat feedback. </span>
+      <span data-t="footerLine">Connect · Learn · Practice · Grow</span>
+    </div>
+  </footer>
+
+  <!-- mobile sticky CTA -->
+  <div class="mobile-install-bar" id="mobileInstallBar">
+    <div><span class="brand-orb tiny">ੴ</span><span><strong>GurSetu</strong><small><span class="redirect-countdown">10</span>s <span data-t="autoRedirect">auto redirect</span></small></span></div>
+    <a class="app-link" href="https://play.google.com/store/apps/details?id=com.gursetu.app" target="_blank" rel="noopener" data-t="install">Install</a>
+  </div>
+</body>
+</html>
